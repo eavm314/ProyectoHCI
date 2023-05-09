@@ -3,10 +3,10 @@ export default {
   content: ["index.html","./src/**/*.{html,jsx}"],
   theme: {
     colors: {
-      'rojito-1':'#F7D7D4',
-      'rojito-2':'#E18D85',
-      'rojito-3':'#DC4D3F',
-      'rojito-4':'#C5483A',
+      'rojito-1':'#F5D9D6',
+      'rojito-2':'#EBB2AD',
+      'rojito-3':'#E18D85',
+      'rojito-4':'#DC4D3F',
       'rojito-5':'#A83B31',
 
       'prioridad-fuerte-hecho':'#C81204',

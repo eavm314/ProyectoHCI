@@ -39,7 +39,7 @@ export const Login = (props) => {
           className="p-10 rounded-lg shadow-lg mx-16 mt-2 border-2"
           onSubmit={handleSubmit}
         >
-          {error && <p className="bg-rojito-3 text-white text-center p-3 mb-5">Todos los campos son Obligatorios</p>}
+          {error && <p className="bg-rojito-4 text-white text-center p-3 mb-5">Todos los campos son Obligatorios</p>}
 
           <input
             placeholder="Nombre"
@@ -69,11 +69,11 @@ export const Login = (props) => {
 
           <Link to='/home'
             type='submit'
-            className='bg-rojito-3 text-white 
-            rounded-md hover:bg-rojito-4
+            className='bg-rojito-4 text-white 
+            rounded-md hover:bg-rojito-5
             shadow-sm shadow-negro 
-            pl-4 pr-6 py-2
-            text-2xl'>
+            pl-4 pr-6 py-1
+            text-3xl'>
             Registrar
           </Link>
         </form>
