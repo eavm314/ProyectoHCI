@@ -26,9 +26,9 @@ export const Formulario = (props) => {
   };
 
   return (
-    <div className="md:w-1/2">
+    <div className="md:w-1/2 text-2xl">
       <h3 className="font-bold text-3xl text-center"> Control de Parqueo </h3>
-      <p className="text-lg text-center mt-4">Control Vehicular</p>
+      <p className="text-center mt-4">Control Vehicular</p>
       <form
         className="bg-white p-10 rounded-lg shadow-lg ml-10 mr-5 mt-2"
         onSubmit={handleSubmit}

@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'chocolate';
+    src:url('Chocolate Covered Raindrops.ttf'),
+        url('Chocolate Covered Raindrops BOLD.ttf'),
+        url('Chocolate Covered Raindrops Hollow.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body { 
+    font-family: 'chocolate';
+    letter-spacing: 0.1em;
+}
