@@ -17,7 +17,6 @@ git clone
 ``
 
 3. Instalar las herramientas necesarias con
-
 ``
 npm install
 ``
