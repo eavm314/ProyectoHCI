@@ -6,7 +6,8 @@ import {
 } from "react-router-dom";
 import './index.css'
 import Inicio from './Inicio';
-import { Parqueo } from './components/Parqueo/Parqueo';
+import { Login } from './components/Login/Login';
+import { Home } from './components/Home/Home';
 
 const router = createBrowserRouter([
   {
@@ -14,8 +15,12 @@ const router = createBrowserRouter([
     element: < Inicio/>,
   },
   {
-    path: "/parqueo",
-    element: < Parqueo/>,
+    path: "/login",
+    element: < Login/>,
+  },
+  {
+    path: "/home",
+    element: < Home/>,
   }
 ]);
 

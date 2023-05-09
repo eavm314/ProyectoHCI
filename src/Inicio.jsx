@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export default function Inicio() {
   return (
-    <div className='h-screen bg-red-300 flex justify-center items-center'>
+    <div className='h-screen bg-rojito-2 flex justify-center items-center'>
       <div className='text-center w-1/2 z-10'>
         <h1 className='font-bold text-8xl'>ToDoNow</h1>
         <p className='text-3xl'>Domina tu lista de tareas con ToDoNow, la forma más sencilla y efectiva de organizar tus pendientes. Ya sea para trabajo, estudio o actividades cotidianas, ToDoNow te permite mantener todo en un solo lugar, con recordatorios personalizados, tareas recurrentes y mucho más. Descubre cómo aumentar tu productividad y reducir el estrés con ToDoNow.</p>
@@ -12,10 +12,11 @@ export default function Inicio() {
         <p className='text-3xl'>¡Únete a la comunidad de usuarios satisfechos hoy mismo!</p>
         
         <br/>
-        <Link to='/parqueo'
-        className='bg-red-500 text-gray-100 
-        rounded-md hover:bg-red-700
-        shadow-sm shadow-gray-600 
+
+        <Link to='/login'
+        className='bg-rojito-3 text-white 
+        rounded-md hover:bg-rojito-4
+        shadow-sm shadow-negro 
         pl-4 pr-6 py-2
         text-4xl '>
           Continuar
