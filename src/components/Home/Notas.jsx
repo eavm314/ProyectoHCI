@@ -1,9 +1,15 @@
 import React, { useState } from 'react'
 import { Tarea } from './Tarea'
-import { IconCirclePlus } from '@tabler/icons-react'
+import { IconCirclePlus, IconSortAscending} from '@tabler/icons-react'
 
-export const Notas = () => {
-    const [listaTareas, setListaTareas] = useState([])
+export const Notas = (props) => {
+
+    const {nombreCarpeta, carpetasMap, setCarpetasMap} = props;
+    // console.log(listaTareas);
+    // Usar prop con map
+    // const [listaTareas, setListaTareas] = useState([]);
+
+
     const [tarea, setTarea] = useState("");
 
     const guardarTarea = (event) => {
@@ -13,17 +19,22 @@ export const Notas = () => {
         if ([tarea].includes("")) {
             return;
         }
-        setListaTareas([...listaTareas, { contenido: tarea }])
-        setTarea("")
+        setCarpetasMap(carpetasMap.set(nombreCarpeta, [...carpetasMap.get(nombreCarpeta), tarea]));
+        setTarea("");
     };
 
 
     return (
         <div className='w-3/4 px-10 py-6 overflow-auto pantalla'>
-            <h1 className='text-6xl font-bold'>Contaduría 1</h1>
+            <div className='flex items-center'>
+                <h1 className='text-6xl font-bold'>{nombreCarpeta}</h1>
+                <button className='ml-auto mr-6 hover:text-rojito-5' >
+                    <IconSortAscending size={32} />
+                </button>
+            </div>
 
-            {listaTareas.map((tarea) => (
-                <Tarea contenido={tarea.contenido} />
+            {carpetasMap.get(nombreCarpeta).map((tarea) => (
+                <Tarea contenido={tarea} />
             ))}
 
             <form 
@@ -39,7 +50,7 @@ export const Notas = () => {
                     value={tarea}
                     onChange={(t) => setTarea(t.target.value)}/>
                 <button type='submit'
-                    className='ml-auto active:text-rojito-3'>
+                    className='ml-auto mr-2 active:text-rojito-3'>
                     <IconCirclePlus size={32} />
                 </button>
             </form>

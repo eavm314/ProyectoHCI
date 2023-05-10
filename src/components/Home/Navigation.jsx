@@ -11,7 +11,7 @@ export const Navigation = () => {
             <h1 className='text-4xl ml-4 font-bold'>
                 ToDoNow
             </h1>
-            <IconBellRinging className='ml-auto mr-4' />
+            <IconBellRinging className='ml-auto mr-14' size={32}/>
 
         </div>
     )
