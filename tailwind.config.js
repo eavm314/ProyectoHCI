@@ -3,6 +3,7 @@ export default {
   content: ["index.html","./src/**/*.{html,jsx}"],
   theme: {
     colors: {
+      'transparent':'transparent',
       'rojito-1':'#F5D9D6',
       'rojito-2':'#EBB2AD',
       'rojito-3':'#E18D85',
