@@ -15,6 +15,7 @@ export const Tarea = (props) => {
                 checked:bg-prioridad-baja-hecho'/>
 
             <p className='text-3xl ml-4'>{contenido}</p>
+            {/* <input className='outline-none bg-transparent text-3xl ml-4 w-full' value={contenido} /> */}
 
             <IconGripVertical className='ml-auto cursor-grab' size={32} />
         </div>
