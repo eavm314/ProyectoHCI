@@ -12,13 +12,13 @@ export const BarraLateral = (props) => {
             <Perfil />
 
             <div className='flex items-center 
-            px-6 py-1 mt-4 
+            pl-6 py-1 mt-4 
             text-5xl font-bold 
             hover:bg-rojito-2'>
-                <button>
+                <button className='w-full text-start'>
                     Categorías
                 </button>
-                <button className='ml-auto hover:text-rojito-5' >
+                <button className='p-1 mx-2 hover:text-rojito-5' >
                     <IconPlus size={32} />
                 </button>
             </div>
