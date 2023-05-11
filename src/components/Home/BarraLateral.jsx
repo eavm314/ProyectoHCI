@@ -8,17 +8,17 @@ export const BarraLateral = (props) => {
     const { listaCarpetas, carpetaActual, setCarpetaActual } = props;
     console.log(listaCarpetas);
     return (
-        <div className='w-1/4 bg-rojito-1 flex flex-col'>
+        <div className='w-1/4 min-w-min bg-rojito-1 flex flex-col'>
             <Perfil />
 
             <div className='flex items-center 
-            px-6 py-1 mt-4 
+            pl-6 py-1 mt-4 
             text-5xl font-bold 
             hover:bg-rojito-2'>
-                <button>
+                <button className='w-full text-start'>
                     Categorías
                 </button>
-                <button className='ml-auto hover:text-rojito-5' >
+                <button className='p-1 mx-2 hover:text-rojito-5' >
                     <IconPlus size={32} />
                 </button>
             </div>

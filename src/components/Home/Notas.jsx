@@ -39,7 +39,7 @@ export const Notas = (props) => {
 
             <form 
             className='sticky bottom-0 w-full
-            text-3xl text-white py-1 px-4
+            text-3xl text-white py-1 px-4 mt-10
             bg-rojito-5 rounded-lg
             flex items-center'
             onSubmit={guardarTarea}>
