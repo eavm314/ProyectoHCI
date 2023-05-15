@@ -4,9 +4,9 @@
 
 @font-face {
     font-family: 'chocolate';
-    src:url('Chocolate Covered Raindrops.ttf'),
-        url('Chocolate Covered Raindrops BOLD.ttf'),
-        url('Chocolate Covered Raindrops Hollow.ttf');
+    src:url('fonts/ChocolateCoveredRaindrops.ttf'),
+        url('fonts/ChocolateCoveredRaindropsBOLD.ttf'),
+        url('fonts/ChocolateCoveredRaindropsHollow.ttf');
     font-weight: normal;
     font-style: normal;
 }
